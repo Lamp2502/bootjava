@@ -13,6 +13,7 @@ import java.util.Set;
 @Table(name = "users")
 @Getter
 @Setter
+//Конструктор без параметров нужен только hibernate, поэтому protected
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @ToString(callSuper = true, exclude = {"password"})
